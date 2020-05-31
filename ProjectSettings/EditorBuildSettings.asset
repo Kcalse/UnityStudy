@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/Study/Scene/Start_Scene.unity
   - enabled: 1
     path: Assets/Study/Scene/Just_Chasing.unity
+  - enabled: 1
+    path: Assets/Study/Scene/Steel_Chasing.unity

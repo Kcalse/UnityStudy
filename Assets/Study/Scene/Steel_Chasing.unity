@@ -199,23 +199,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 47624105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3294459318d7144f2938f60ff97f5e6b, type: 3}
+  m_Script: {fileID: 11500000, guid: cdaa54b947d9546e3bc45d706993c55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _drawGizmos: 0
-  _center: {x: 0, y: 0}
+  _center: {x: 0, y: 0, z: 0}
   _radius: 1
   _minSpeedForTurning: 0.1
   _movementPriority: 0
   _turnTime: 0.25
   _mass: 1
-  _allowedMovementAxes: {x: 1, y: 1}
+  _allowedMovementAxes: {x: 1, y: 1, z: 1}
   _arrivalRadius: 0.25
   _maxSpeed: 1
   _maxForce: 10
   _canMove: 1
-  _forward: 0
-  _queueName: Steering2D
+  _queueName: Steering
   _tickLength: 0.1
   _maxQueueProcessedPerUpdate: 20
   _traceAdjustments: 0
@@ -613,8 +612,8 @@ GameObject:
   - 33: {fileID: 1195474799}
   - 135: {fileID: 1195474798}
   - 23: {fileID: 1195474797}
-  - 114: {fileID: 1195474796}
   - 114: {fileID: 1195474795}
+  - 114: {fileID: 1195474796}
   m_Layer: 0
   m_Name: Pursuer
   m_TagString: Untagged
@@ -636,7 +635,7 @@ MonoBehaviour:
   _weight: 10
   _acceptableDistance: 0
   _slowDownOnApproach: 0
-  _quarry: {fileID: 0}
+  _quarry: {fileID: 47624112}
   _maxPredictionTime: 5
 --- !u!114 &1195474796
 MonoBehaviour:
@@ -646,28 +645,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1195474794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3294459318d7144f2938f60ff97f5e6b, type: 3}
+  m_Script: {fileID: 11500000, guid: cdaa54b947d9546e3bc45d706993c55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _drawGizmos: 0
-  _center: {x: 0, y: 0}
+  _center: {x: 0, y: 0, z: 0}
   _radius: 1
-  _minSpeedForTurning: 0.1
+  _minSpeedForTurning: 0.05
   _movementPriority: 0
-  _turnTime: 0.25
+  _turnTime: 0.1
   _mass: 1
-  _allowedMovementAxes: {x: 1, y: 1}
+  _allowedMovementAxes: {x: 1, y: 1, z: 1}
   _arrivalRadius: 0
-  _maxSpeed: 10
-  _maxForce: 10
+  _maxSpeed: 8
+  _maxForce: 15
   _canMove: 1
-  _forward: 0
-  _queueName: Steering2D
+  _queueName: Steering
   _tickLength: 0.1
   _maxQueueProcessedPerUpdate: 20
   _traceAdjustments: 0
-  _accelerationRate: 10
-  _decelerationRate: 5
+  _accelerationRate: 9
+  _decelerationRate: 6
 --- !u!23 &1195474797
 MeshRenderer:
   m_ObjectHideFlags: 0
